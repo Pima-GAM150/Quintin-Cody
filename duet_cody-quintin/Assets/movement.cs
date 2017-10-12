@@ -5,6 +5,7 @@ using UnityEngine;
 public class movement : MonoBehaviour {
     public float speed = 1f;
     public float rotationspeed = 1f;
+    public float turbo = 1f;
     
 
     // Use this for initialization
@@ -17,5 +18,6 @@ public class movement : MonoBehaviour {
         
         transform.Rotate(0f,Input.GetAxis("Horizontal")*Time.deltaTime* rotationspeed,0f);
         transform.Translate(0f,0f,Input.GetAxis("Vertical") * Time.deltaTime* speed);
+        transform.Translate(0f, 0f, Input.GetAxis("Jump") * Time.deltaTime * turbo);
     }
 }

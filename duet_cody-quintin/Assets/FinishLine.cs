@@ -5,7 +5,7 @@ using UnityEngine;
 public class FinishLine : MonoBehaviour {
 
     public GameObject Finish;
-    private void OnTriggerEnter;
+    
     
     
     
